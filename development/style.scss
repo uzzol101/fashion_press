@@ -1,0 +1,108 @@
+@import "./sass_mixins";
+@import "bourbon";
+
+// font sizes
+$breakpoints: ( small: 480px, medium: 700px, large: 1024px);
+$h1-font-sizes: ( null: (23px, 32px), small: (36px, 53px), medium: (38px, 50px), large: (52px, 60px));
+$p-font-sizes: ( null: (14px, null), small: 16px, medium: (17px, null), 900px: 18px, large: (17px, null), 1440px: 17px, );
+$h1-font-extrabold: ( null: (23px, 32px), small: (36px, 53px), medium: (38px, 50px), large: (32px, 62px));
+// modular-scale base setup
+
+// helper classes
+// @font-face {
+//     font-family: 'Proxima Nova';
+//     src: url('../fonts/Proxima Nova Bold.otf');
+// }
+// @font-face {
+//     font-family: 'Proxima Nova Regular';
+//     src: url('../fonts/Proxima Nova Regular.otf');
+// }
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/Lato-Light.ttf');
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none !important;
+}
+
+body {
+    font-family: 'Lato-Regular';
+    //font-size: 1em;
+   
+}
+
+
+//bs3 navbar style reset
+
+#mainNavigation {
+   
+   background: none;
+        border: none;
+    .nav {
+        a {
+            text-shadow: none;
+            color: #fff;
+        }
+        li > a:focus,
+        a:hover {
+            color: #333333;
+            text-decoration: none;
+            background: none;
+        }
+        .active > a {
+            color: #ccc;
+            background: none;
+            box-shadow: none;
+            &:hover {
+                background: none;
+                box-shadow: none;
+            }
+        }
+        .open > a,
+        .open > a:hover,
+        .open > a:focus {
+            background: none;
+        }
+    } //nav
+    .dropdown-menu {
+        background: none;
+    }
+   
+} //mainNavigation
+
+
+
+
+@media (max-width: 479px) {}
+
+@media (max-width: 767px) {
+   
+}
+
+@media (min-width:480px) and (max-width:767px) {}
+
+@media (min-width:768px)and(max-width: 991px) {}
+
+@media (min-width: 992px) {}
