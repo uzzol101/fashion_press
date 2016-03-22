@@ -1,14 +1,18 @@
 @font-face {
-  font-family: 'Lato-Bold';
-  src: url("../fonts/Lato-Bold.ttf"); }
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.ttf"); }
 
 @font-face {
-  font-family: 'Lato-Regular';
-  src: url("../fonts/Lato-Regular.ttf"); }
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.ttf"); }
 
 @font-face {
-  font-family: 'Lato-Light';
-  src: url("../fonts/Lato-Light.ttf"); }
+  font-family: 'Roboto-Medium';
+  src: url("../fonts/Lato-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: url("../fonts/Myriad-Pro.ttf"); }
 
 .clearfix::after {
   clear: both;
@@ -26,7 +30,8 @@
   float: none !important; }
 
 body {
-  font-family: 'Lato-Regular'; }
+  font-family: 'Roboto-Medium';
+  line-height: 1.5; }
 
 .header-top {
   text-align: center;
@@ -70,14 +75,16 @@ body {
   border: none; }
   #mainNavigation .nav a {
     text-shadow: none;
-    color: #fff; }
+    color: #fff;
+    font-family: 'Myriad-Pro';
+    font-size: 13px; }
   #mainNavigation .nav li > a:focus,
   #mainNavigation .nav a:hover {
-    color: #333333;
+    color: #fff;
     text-decoration: none;
     background: none; }
   #mainNavigation .nav .active > a {
-    color: #ccc;
+    color: #fff;
     background: none;
     box-shadow: none; }
     #mainNavigation .nav .active > a:hover {
@@ -90,6 +97,9 @@ body {
   #mainNavigation .dropdown-menu {
     background: none; }
 
+.slider-text, .logo {
+  font-family: 'OpenSans-Light'; }
+
 #slider {
   background: url("../img/slider.jpg") no-repeat;
   padding-bottom: 50px;
@@ -98,10 +108,24 @@ body {
     max-width: 100%;
     margin-top: 50px; }
   #slider .slider-text {
-    color: #fff;
-    max-width: 300px; }
+    color: #fff; }
     #slider .slider-text h3 {
-      font-size: 32px; }
+      font-size: 23px;
+      line-height: 1.3; }
+      @media screen and (min-width: 480px) {
+        #slider .slider-text h3 {
+          font-size: 36px;
+          line-height: 1.3; } }
+      @media screen and (min-width: 768px) {
+        #slider .slider-text h3 {
+          font-size: 38px;
+          line-height: 1.4; } }
+      @media screen and (min-width: 1024px) {
+        #slider .slider-text h3 {
+          font-size: 52px;
+          line-height: 1.5; } }
+    #slider .slider-text p {
+      font-size: 16px; }
 
 @media (max-width: 767px) {
   .sign-in #top-right {
@@ -116,5 +140,5 @@ body {
 
 @media (min-width: 992px) {
   #slider .slider-text {
-    margin-left: 261px;
-    margin-top: 214px; } }
+    margin-left: 109px;
+    margin-top: 140px; } }
