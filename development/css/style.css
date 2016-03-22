@@ -95,9 +95,19 @@ body {
   height: 882px; }
   #slider img {
     max-width: 100%; }
+  #slider .slider-text {
+    color: #fff;
+    max-width: 300px;
+    margin-left: 270px;
+    margin-top: 160px; }
+    #slider .slider-text h3 {
+      font-size: 32px; }
 
 @media (max-width: 767px) {
   .sign-in #top-right {
     float: none; }
   #mainNavigation {
-    text-align: center; } }
+    text-align: center; }
+  #slider .slider-text {
+    margin-left: 0;
+    margin-top: 0; } }

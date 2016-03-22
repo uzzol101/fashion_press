@@ -154,6 +154,15 @@ body {
     img{
         max-width: 100%;
     }
+    .slider-text{
+        color: #fff;
+        max-width: 300px;
+        h3{
+            font-size: 32px;
+        }
+        margin-left: 270px;
+        margin-top: 160px;
+    }
 }
 
 
@@ -169,6 +178,12 @@ body {
     }
     #mainNavigation{
         text-align: center;
+    }
+    #slider{
+        .slider-text{
+            margin-left: 0;
+            margin-top: 0;
+        }
     }
 }
 
