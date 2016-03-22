@@ -53,8 +53,63 @@ body {
    
 }
 
+//header top 
+.header-top{
+   text-align: center;
+    background: #f7f7f7;
+}
+.logo{
+    h1{
+        font-size: 30px;
+        margin: 0;
+        padding-top: 15px;
+        text-align: left;
+       a{
+        color: #ff0101;
+        text-decoration: none;
+       }
+       span{
+        color: #010101;
+       }
+    }
+}
+.sign-in{
+    text-align: center;
+   
+    #top-right{
+        float: right;
+        display: inline-block;
+
+    }
+    
+    a{
+        background: #eeeeee;
+       height: 70px;
+       padding: 0 20px;
+       line-height: 70px;
+       display: inline-block;
+       float: left;
+       border-right: 1px solid #fff;
+
+       // font-size: 17px;
+
+    }
+    .red-color{
+        color: red;
+        
+        span{
+            color: black;
+
+            font-size: 14px;
+        }
+    }
+}
 
 //bs3 navbar style reset
+#stieNavigation{
+     background: #010101;
+    
+}
 
 #mainNavigation {
    
@@ -98,11 +153,21 @@ body {
 @media (max-width: 479px) {}
 
 @media (max-width: 767px) {
-   
+   .sign-in{
+        #top-right{
+            float: none;
+            
+        }
+    }
+    #mainNavigation{
+        text-align: center;
+    }
 }
 
 @media (min-width:480px) and (max-width:767px) {}
 
-@media (min-width:768px)and(max-width: 991px) {}
+@media (min-width:768px)and(max-width: 991px) {
+    
+}
 
 @media (min-width: 992px) {}
