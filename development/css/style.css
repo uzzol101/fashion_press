@@ -138,29 +138,34 @@ body {
 
 #search-area {
   background: #deeaef;
-  padding: 5px 0; }
-  #search-area input, #search-area span, #search-area label {
-    display: block; }
+  padding: 10px 0; }
   #search-area label {
-    float: left;
-    margin-top: 5px;
-    margin-right: 20px;
     color: #df1f26;
-    text-transform: uppercase; }
+    margin-right: 20px; }
+  #search-area .form-group {
+    margin: 0; }
   #search-area input {
     background: #c9c9c9;
-    width: 200px;
+    width: 250px;
     border: none;
-    height: 30px;
-    float: left; }
-  #search-area span {
+    height: 32px;
+    padding-left: 10px;
+    color: #df1f26; }
+  #search-area button {
     background: #df1f26;
     width: 40px;
-    height: 30px;
-    float: left;
+    height: 32px;
+    border: none;
     text-align: center;
     line-height: 30px;
-    color: #fff; }
+    color: #fff;
+    margin-left: -5px; }
+
+@media (max-width: 479px) {
+  #search-area {
+    text-align: center; }
+    #search-area label {
+      display: block; } }
 
 @media (max-width: 767px) {
   .sign-in #top-right {
